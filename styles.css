@@ -1,0 +1,98 @@
+/* Center the entire body and apply a background image */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center; /* Center the text including the title */
+  background-image: url('https://image.shutterstock.com/image-photo/blurred-bookshelf-many-old-books-260nw-1550267513.jpg'); /* Use the Shutterstock image URL */
+  background-size: cover; /* Cover the whole background */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Keep background fixed when scrolling */
+  margin: 0;
+  padding: 20px;
+  color: white; /* Optional: Make text white for better contrast against dark backgrounds */
+}
+
+/* Style for the title */
+h1 {
+  font-size: 3em;
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: Add a text shadow for better readability */
+}
+
+/* Container to center the new book button */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin: 20px 0;          /* Add some space around the button */
+}
+
+/* Container for the library that aligns books side by side */
+#library {
+  display: flex;
+  flex-wrap: wrap;  /* Allow wrapping when there are too many book cards */
+  justify-content: center;  /* Center the books horizontally */
+  gap: 20px;  /* Space between each book */
+  margin-top: 20px;
+}
+
+/* Style for book cards */
+.book-card {
+  border: 1px solid gray;         /* Gray border around each book card */
+  background-color: rgba(245, 245, 245, 0.8); /* Light gray background with some transparency (0.8 opacity) */
+  padding: 20px;                  /* Padding inside the book card */
+  border-radius: 5px;             /* Rounded corners for the card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+  width: 250px;                   /* Set a fixed width for each card */
+  transition: box-shadow 0.3s ease;
+  color: black;                   /* Change text color to black */
+}
+
+/* Slight hover effect to lift the card */
+.book-card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow when hovered */
+}
+
+/* Base button styles with blue color and transparency */
+.styled-button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: rgba(0, 123, 255, 0.7); /* Blue with 70% transparency */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  font-size: 14px;
+  display: inline-block;
+}
+
+/* Button hover effect: slightly darker blue */
+.styled-button:hover {
+  background-color: rgba(0, 123, 255, 0.85); /* Darker blue */
+}
+
+/* Button active state: lighter blue when clicked */
+.styled-button:active {
+  background-color: rgba(0, 123, 255, 0.5); /* Lighter blue */
+}
+
+/* Modal dialog styling */
+dialog {
+  border: 2px solid #000;
+  padding: 20px;
+}
+
+/* Form label styling */
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Form input styling */
+form input {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
